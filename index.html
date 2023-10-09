@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apip Portofolio</title>
+        <style>
+            body {
+                background-color: #EBE4D1;
+                font-family: Arial, sans-serif;
+            }
+
+            nav {
+                text-align: center;
+                padding: 50px 0;
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #0F2C59;
+                font-weight: bold;
+                /* Efek garis bawah saat hover */
+                border-bottom: 2px solid transparent;
+                transition: border-bottom 0.2s ease-in-out;
+            }
+
+            /* Gaya saat navbar dihover */
+            nav a:hover {
+                border-bottom: 2px solid #0F2C59;
+            }
+
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .left-content {
+                text-align: left;
+                max-width: 30%;
+                padding: 20px;
+                color: #0F2C59;
+                padding-left: 200px;
+            }
+
+            .left-content p {
+                font-size: 20px;
+                font-weight: 400;
+                padding-bottom: 30px;
+            }
+            .left-content h1 {
+                overflow: hidden;
+                white-space: nowrap;
+                animation: typing 5s steps(40, end);
+                font-size: 37px;
+                padding-bottom: 10px;
+
+            }
+
+            @keyframes typing {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 100%;
+                }
+            }
+
+            .right-content {
+                padding-right: 150px;
+                max-width: 30%;
+            }
+
+            .right-content img {
+                max-width: 80%;
+                height: auto;
+            }
+            .portfolio-button {
+                background-color: #0F2C59;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .portfolio-button a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+
+            .portfolio-button:hover {
+                background-color: #144a9b;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portofolio.html">Portofolio</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="left-content">
+                <p>Hello, i’m a</p>
+                <h1>Fullstack Web Developer</h1>
+                <p>I am Ahmad Afif Fawzillah, currently I focus on fullstack web development.
+                    welcome to my portfolio</p>
+                <button class="portfolio-button">
+                    <a href="#">See My Portfolio</a>
+                </button>
+            </div>
+            <div class="right-content">
+                <img src="foto1.png" alt="Foto Anda">
+            </div>
+        </div>
+    </body>
+</html>

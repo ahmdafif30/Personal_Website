@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Page</title>
+        <style>
+            body {
+                background-color: #EBE4D1;
+                font-family: Arial, sans-serif;
+            }
+
+            nav {
+                text-align: center;
+                padding: 50px 0;
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #0F2C59;
+                font-weight: bold;
+                /* Efek garis bawah saat hover */
+                border-bottom: 2px solid transparent;
+                transition: border-bottom 0.2s ease-in-out;
+            }
+
+            /* Gaya saat navbar dihover */
+            nav a:hover {
+                border-bottom: 2px solid #0F2C59;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+            }
+
+            .content-left {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .content-left img {
+                max-width: 100%;
+                height: 450px;
+                display: block;
+            }
+
+            .content-right {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .content-right h1 {
+                font-size: 37px;
+                margin-bottom: 10px;
+                padding-bottom: 15px;
+                text-transform: uppercase;
+                color: transparent;
+                -webkit-text-stroke: 2px #0F2C59;
+                text-shadow: 2px 2px 4px #00000080;
+            }
+
+            .content-right p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.5;
+                padding-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portofolio.html">Portofolio</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="content-left">
+                <img src="foto2.png" alt="Foto Anda">
+            </div>
+            <div class="content-right">
+                <h1>About Me</h1>
+                <p>Let me introduce myself, my name is Ahmad Afif Fawzillah, usually called
+                    Apip, currently I am focusing on becoming a fullstack web developer.</p>
+                <p>I've only been focusing in this field for 1 year, but I hope I can continue
+                    to develop into a fullstack web developer.</p>
+            </div>
+        </div>
+    </body>
+</html>

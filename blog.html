@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Page</title>
+        <style>
+            body {
+                background-color: #EBE4D1;
+                font-family: Arial, sans-serif;
+            }
+
+            nav {
+                text-align: center;
+                padding: 50px 0;
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #0F2C59;
+                font-weight: bold;
+                /* Efek garis bawah saat hover */
+                border-bottom: 2px solid transparent;
+                transition: border-bottom 0.2s ease-in-out;
+            }
+
+            /* Gaya saat navbar dihover */
+            nav a:hover {
+                border-bottom: 2px solid #0F2C59;
+            }
+            h1 {
+                text-align: center;
+                color: rgba(255, 255, 255, 0.1);
+                -webkit-text-stroke: 1px #0F2C59;
+            }
+
+            .card-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 80px;
+                margin-top: 50px;
+            }
+
+            .card {
+                background-color: #fff;
+                width: 300px;
+                border: 1px solid #ccc;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                padding: 16px;
+                text-align: center;
+            }
+
+            .card img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .card h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .card p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .card button {
+                background-color: #0F2C59;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portofolio.html">Portofolio</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Blog Artikel</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="foto4.png" alt="Gambar 1">
+                <h2>Apa itu Coding? Ini Pengertian, Manfaat, dan Contohnya Lengkap</h2>
+                <p>Ariffud Muhammad | Niaga Hoster</p>
+                <button
+                    onclick="window.location.href = 'https://www.niagahoster.co.id/blog/apa-itu-coding/';">Kunjungi</button>
+            </div>
+
+            <div class="card">
+                <img src="foto5.webp" alt="Gambar 2">
+                <h2>Cara Membuat Website Gratis dan Mudah untuk Pemula</h2>
+                <p>Aura Nisrina Hesanty | Niaga Hoster
+                </p>
+                <button
+                    onclick="window.location.href = 'https://www.niagahoster.co.id/blog/cara-membuat-website-gratis/';">Kunjungi</button>
+            </div>
+        </div>
+    </body>
+</html>
